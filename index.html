@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShutterStories - Every Picture Tells a Story</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="camera-shutter">
+            <div class="shutter-blade"></div>
+            <div class="shutter-blade"></div>
+            <div class="shutter-blade"></div>
+            <div class="shutter-blade"></div>
+            <div class="shutter-blade"></div>
+            <div class="shutter-blade"></div>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">ShutterStories</a>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-slider" id="heroSlider">
+            <div class="hero-slide active">
+                <div class="hero-content">
+                    <h1 class="hero-title">Every Picture Tells a Story</h1>
+                    <p class="hero-subtitle">Capturing moments, creating memories, sharing perspectives through the lens of creativity</p>
+                    <div class="hero-buttons">
+                        <a href="blog.html" class="btn btn-primary">Read Latest Posts</a>
+                        <a href="tutorials.html" class="btn btn-secondary">View Tutorials</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h1 class="hero-title">Discover the Art of Photography</h1>
+                    <p class="hero-subtitle">Learn techniques, explore styles, and elevate your photography journey</p>
+                    <div class="hero-buttons">
+                        <a href="tutorials.html" class="btn btn-primary">Start Learning</a>
+                        <a href="blog.html" class="btn btn-secondary">Browse Stories</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-content">
+                    <h1 class="hero-title">Stories Through the Lens</h1>
+                    <p class="hero-subtitle">Join our community of passionate photographers and visual storytellers</p>
+                    <div class="hero-buttons">
+                        <a href="about.html" class="btn btn-primary">Our Story</a>
+                        <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-btn prev" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <section class="featured-posts">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Featured Stories</h2>
+                <p>Explore our latest photography adventures and insights</p>
+            </div>
+            <div class="posts-grid">
+                <article class="post-card fade-in">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=800&h=600&fit=crop" alt="Mountain Landscape">
+                        <div class="post-category">Landscape</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Chasing Golden Hours in the Mountains</h3>
+                        <p class="post-meta"><i class="far fa-calendar"></i> March 15, 2024</p>
+                        <p class="post-excerpt">Discover the magic of capturing breathtaking mountain landscapes during the perfect lighting moments...</p>
+                        <a href="blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="post-card fade-in">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=800&h=600&fit=crop" alt="Portrait Photography">
+                        <div class="post-category">Portrait</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>The Art of Natural Light Portraits</h3>
+                        <p class="post-meta"><i class="far fa-calendar"></i> March 12, 2024</p>
+                        <p class="post-excerpt">Learn how to harness natural light to create stunning, emotive portrait photography...</p>
+                        <a href="blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="post-card fade-in">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&h=600&fit=crop" alt="Street Photography">
+                        <div class="post-category">Street</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Urban Stories: Street Photography Guide</h3>
+                        <p class="post-meta"><i class="far fa-calendar"></i> March 8, 2024</p>
+                        <p class="post-excerpt">Explore the vibrant world of street photography and capture authentic urban moments...</p>
+                        <a href="blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="post-card fade-in">
+                    <div class="post-image">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&h=600&fit=crop" alt="Travel Photography">
+                        <div class="post-category">Travel</div>
+                    </div>
+                    <div class="post-content">
+                        <h3>Wanderlust: Photography Travel Tips</h3>
+                        <p class="post-meta"><i class="far fa-calendar"></i> March 5, 2024</p>
+                        <p class="post-excerpt">Essential tips for capturing memorable moments during your photography travels...</p>
+                        <a href="blog.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShutterStories</h3>
+                    <p>Capturing moments, creating memories, sharing perspectives through the lens of creativity.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="tutorials.html">Tutorials</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to get updates on new posts and tutorials</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShutterStories. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
